@@ -6,7 +6,7 @@ p{
 	padding: 50px;
 }
 body{
-	background-image: url('https://moulinduk.github.io/back.jpg');
+	background-image: url("https://moulinduk.github.io/back.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 }
