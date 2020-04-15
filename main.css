@@ -1,0 +1,185 @@
+@keyframes txt {
+	0% {content: "";}
+	25% {content: "Hello, I am Moulindu Kundu from Kolkata.";}
+	50% {content: "Hello, I am Moulindu Kundu from Kolkata. Currently, I am enrolled to first year of Integrated MSc course in Chemistry at IIT Kharagpur.";}
+	75% {content: "Hello, I am Moulindu Kundu from Kolkata. Currently, I am enrolled to first year of Integrated MSc course in Chemistry at IIT Kharagpur. I like to play Table Tennis and read story-books.";}
+	100% {content: "Hello, I am Moulindu Kundu from Kolkata. Currently, I am enrolled to first year of Integrated MSc course in Chemistry at IIT Kharagpur. I like to play Table Tennis and read story-books. In future, I am aiming to pursue research as my career ." ;}
+}
+p::before{
+	font: italic 30px cursive;
+	text-shadow: 0px 0px 3px blue;
+	content: "Hello, I am Moulindu Kundu from Kolkata. Currently, I am enrolled to first year of Integrated MSc course in Chemistry at IIT Kharagpur. I like to play Table Tennis and read story-books. In future, I am aiming to pursue research as my career ." ;
+	animation-name: txt;
+	animation-duration: 10s;
+}
+h1{
+	color: white;
+	font-family: 'Lucida Console', monospace;
+	margin: 5px;
+	padding: 5px;
+	display: inline;
+	border: 2px solid black;
+	border-radius: 5px;
+	background: rgba(255,255,255,0.9);
+	text-shadow: 0px 0px 5px black;
+	box-shadow: 5px 5px 5px black;
+}
+h2{
+	text-align: center;
+	text-decoration: underline;
+	color: white;
+	text-shadow: 0px 0px 5px black;
+	font-family: Arial;
+}
+@keyframes bg {
+	12.5% {background-image: url("back.jpg");}
+	37.5% {background-image: url("back2.jpg");}
+	62.5% {background-image: url("back2.jpg");}
+	87.5% {background-image: url("back.jpg");}
+}
+body{
+	background-image: url("back.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	animation-name: bg;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+.current{
+	color: red;
+	text-decoration: none;
+	font: 50px 'Impact', sans-serif;
+	padding: 2px 10px 2px 10px;
+	border: 4px solid red;
+	margin: 100px 0px 0px 0px;
+	border-radius: 10px;
+	background: linear-gradient(to right, orange, yellow);
+	box-shadow: 0px 0px 20px red;
+
+}
+.other{
+	color: purple;
+	text-decoration: none;
+	font: 50px 'Impact', sans-serif;
+	padding: 2px 10px 2px 10px;
+	border: 4px solid purple;
+	margin: 100px 0px 0px 0px;
+	border-radius: 10px;
+	background: rgba(255,255,255,.5);
+}
+.other:hover{
+	background-color: #8ceb34;
+	border-color: green;
+	color: green;
+}
+@keyframes example {
+  12.5% {background: linear-gradient(to right, rgba(255,255,25,0.8),rgba(128,255,0,0.8));}
+  37.5% {background: linear-gradient(to right, rgba(128,255,0,0.8),rgba(255,255,25,0.8));}
+  62.5% {background: linear-gradient(to right, rgba(128,255,0,0.8),rgba(255,255,25,0.8));}
+  87.5% {background: linear-gradient(to right, rgba(255,255,25,0.8),rgba(128,255,0,0.8));}
+}
+.desc{
+	
+	height: 700px;
+	border-radius: 10px;
+	padding: 5px;
+	margin-left: 400px;
+	background: linear-gradient(to right, rgba(255,255,25,0.8),rgba(128,255,0,0.8));
+	animation-name: example;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+.descP{
+	width: 100%;
+}
+.round{
+	width: 300px;
+	height: 300px;
+	border: 4px solid green;
+	border-radius: 150px;
+	box-shadow: 0px 0px 20px #8ceb34;
+	padding: 0px;
+	margin: 21px;
+}
+.img{
+	width: 350px;
+	height: 700px;
+	border: 2px solid rgb(171,186,171);
+	border-radius: 10px;
+	float: left;
+	background: rgba(171,186,171,0.5);
+}
+.link{
+	text-align: right;
+}
+.detail{
+	color: orange;
+	font-size: 20px;
+	text-shadow: 0px 0px 5px red;
+}
+.head{
+	text-shadow: 0px 0px 8px red;
+	font-family: Arial;
+	color: #fa6023;
+}
+.child{
+	margin: 20px;
+	padding: 10px;
+	height: 700px;
+	background: radial-gradient(rgba(0,0,0,0.7),rgba(255,255,255,0.7));
+	border-radius: 10px;
+}
+.am{
+	margin-left: 2.5%;
+	display: inline;
+	float: left;
+	width: 30%;
+}
+.am_im{
+	border: 5px solid #852a15;
+	border-radius: 50%;
+	box-shadow: 0px 0px 10px #852a15;
+}
+.am_li{
+	font: italic bold 20px Arial;
+	text-shadow: 0px 0px 10px yellow;
+}
+#achieve{
+	margin-top: 50px;
+	border: 4px solid yellow;
+	border-radius: 20px;
+	box-shadow: 0px 0px 20px yellow;
+	width: 50%;
+	/*height: 400px;*/
+}
+@keyframes ach {
+	0% {content: "Qualified in JEE Advanced 2019 (AIR-7553)";}
+	34% {content: "Qualified in KVPY SA-2017 (AIR-540)";}
+	67% {content: "Secured 8th(SR) position in H.S exam 2019";} 
+	100% {content: "Qualified in JEE Advanced 2019 (AIR-7553)";}
+}
+#achieve::after{
+	color: #161f5c;
+	font: bold 70px monospace;
+	text-shadow: 0px 0px 20px red;
+	content: "Qualified in JEE Advanced 2019 (AIR-7553)";
+	animation-name: ach;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+.contact{
+	font-size: 30px;
+	font-style: italic;
+	text-decoration: none;
+	color: orange;
+	text-shadow: 0px 0px 10px black;
+}
+.contact:hover{
+	color: #6fff00;
+}
+
+/*font: style weight size family;*/
+/*border: size style color;*/
+/*padding/margin: size color;*/
+/*background: color image position/size repeat attachment;*/
+/*text/box-shadow: right-shift down-shift spread color;*/
