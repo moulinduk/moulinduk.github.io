@@ -14,14 +14,14 @@ p::before{
 }
 h1{
 	color: white;
-	font-family: 'Lucida Console', monospace;
+	font-family: 'Alfa Slab One';
 	margin: 5px;
 	padding: 5px;
 	display: inline;
 	border: 2px solid black;
 	border-radius: 5px;
 	background: rgba(255,255,255,0.9);
-	text-shadow: 0px 0px 5px black;
+	text-shadow: 0px 0px 10px black;
 	box-shadow: 5px 5px 5px black;
 }
 h2{
@@ -48,7 +48,7 @@ body{
 .current{
 	color: red;
 	text-decoration: none;
-	font: 100% 'Impact', sans-serif;
+	font: 100% 'Abril Fatface';
 	padding: 2px 10px 2px 10px;
 	border: 4px solid red;
 	margin: 100px 0px 0px 0px;
@@ -60,7 +60,7 @@ body{
 .other{
 	color: purple;
 	text-decoration: none;
-	font: 100% 'Impact', sans-serif;
+	font: 100% 'Abril Fatface';
 	padding: 2px 10px 2px 10px;
 	border: 4px solid purple;
 	margin: 100px 0px 0px 0px;
