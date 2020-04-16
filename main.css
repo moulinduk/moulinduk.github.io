@@ -1,14 +1,14 @@
 @keyframes txt {
 	0% {content: "";}
 	25% {content: "Hello, I am Moulindu Kundu from Kolkata.";}
-	50% {content: "Hello, I am Moulindu Kundu from Kolkata. Currently, I am enrolled to first year of Integrated MSc course in Chemistry at IIT Kharagpur.";}
-	75% {content: "Hello, I am Moulindu Kundu from Kolkata. Currently, I am enrolled to first year of Integrated MSc course in Chemistry at IIT Kharagpur. I like to play Table Tennis and read story-books.";}
-	100% {content: "Hello, I am Moulindu Kundu from Kolkata. Currently, I am enrolled to first year of Integrated MSc course in Chemistry at IIT Kharagpur. I like to play Table Tennis and read story-books. In future, I am aiming to pursue research as my career ." ;}
+	50% {content: "Hello, I am Moulindu Kundu from Kolkata. Currently, I am enrolled in first year of Integrated MSc course in Chemistry at IIT Kharagpur.";}
+	75% {content: "Hello, I am Moulindu Kundu from Kolkata. Currently, I am enrolled in first year of Integrated MSc course in Chemistry at IIT Kharagpur. I like to play Table Tennis and read story-books.";}
+	100% {content: "Hello, I am Moulindu Kundu from Kolkata. Currently, I am enrolled in first year of Integrated MSc course in Chemistry at IIT Kharagpur. I like to play Table Tennis and read story-books. In future, I am aiming to pursue research as my career ." ;}
 }
 p::before{
 	font: italic 30px cursive;
 	text-shadow: 0px 0px 3px blue;
-	content: "Hello, I am Moulindu Kundu from Kolkata. Currently, I am enrolled to first year of Integrated MSc course in Chemistry at IIT Kharagpur. I like to play Table Tennis and read story-books. In future, I am aiming to pursue research as my career ." ;
+	content: "Hello, I am Moulindu Kundu from Kolkata. Currently, I am enrolled in first year of Integrated MSc course in Chemistry at IIT Kharagpur. I like to play Table Tennis and read story-books. In future, I am aiming to pursue research as my career ." ;
 	animation-name: txt;
 	animation-duration: 10s;
 }
