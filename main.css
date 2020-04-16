@@ -126,7 +126,7 @@ body{
 .child{
 	margin: 20px;
 	padding: 10px;
-	/*height: 400px;*/
+	height: 450px;
 	background: radial-gradient(rgba(0,0,0,0.7),rgba(255,255,255,0.7));
 	border-radius: 10px;
 }
@@ -162,7 +162,7 @@ body{
 }
 #achieve::after{
 	color: white;
-	font: bold 70px 'Stardos Stencil';
+	font: bold 50px 'Stardos Stencil';
 	text-shadow: 0px 0px 20px red;
 	content: "Qualified in JEE Advanced 2019 (AIR-7553)";
 	animation-name: ach;
