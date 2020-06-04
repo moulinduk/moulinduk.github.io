@@ -7,12 +7,6 @@ var b = 0, bloc = 2;
 var t = "A";
 var aleft = 0, bleft = 0;
 
-function inLocker(pl) {
-	var x = document.getElementById(pl).innerHTML;
-	var ret = Number(x[22]);
-	return ret;
-}
-
 function flipPlayer(X) {
 	if (X == "A") {
 		document.getElementById("turn").innerHTML = "TURN: Player B";
@@ -174,6 +168,24 @@ function move(token, x) {
 		else if (token + x >= 28) {
 			a--;
 			document.getElementById("b"+String(token)).innerHTML = "";
+			if (token + x == 28) {
+				if (tb1 == 28) {
+					tb1 = 0;
+					bloc++;
+					b--;
+					if(bloc == 1) document.getElementById("B").innerHTML = "Locker for B <br><div class='tokenB'></div>";
+					else document.getElementById("B").innerHTML = "Locker for B <br><div class='tokenB'></div><div class='tokenB'></div>";
+					document.getElementById("b28").innerHTML = "";
+				}
+				if (tb2 == 28) {
+					tb2 = 0;
+					bloc++;
+					b--;
+					if(bloc == 1) document.getElementById("B").innerHTML = "Locker for B <br><div class='tokenB'></div>";
+					else document.getElementById("B").innerHTML = "Locker for B <br><div class='tokenB'></div><div class='tokenB'></div>";
+					document.getElementById("b28").innerHTML = "";
+				}
+			}
 			if (token == ta1) ta1 = 29;
 			else ta2 = 29;
 			aleft++;
@@ -195,6 +207,24 @@ function move(token, x) {
 		if ((token < 14) && (token + x >= 14)) {
 			b--;
 			document.getElementById("b"+String(token)).innerHTML = "";
+			if (token + x == 14) {
+				if (14 == ta1) {
+					ta1 = 0;
+					aloc++;
+					a--;
+					if(aloc == 1) document.getElementById("A").innerHTML = "Locker for A <br><div class='tokenA'></div>";
+					else document.getElementById("A").innerHTML = "Locker for A <br><div class='tokenA'></div><div class='tokenA'></div>";
+					document.getElementById("b14").innerHTML = "";
+				}
+				if (14 == ta2) {
+					ta2 = 0;
+					aloc++;
+					a--;
+					if(aloc == 1) document.getElementById("A").innerHTML = "Locker for A <br><div class='tokenA'></div>";
+					else document.getElementById("A").innerHTML = "Locker for A <br><div class='tokenA'></div><div class='tokenA'></div>";
+					document.getElementById("b14").innerHTML = "";
+				}
+			}
 			if (token == tb1) tb1 = 29;
 			else tb2 = 29;
 			bleft++;
@@ -312,10 +342,3 @@ function roll() {
 	}
 }
 
-function check(key) {
-	document.getElementById(key).style.boxShadow = "0px 0px 20px rgb(254,127,0)";
-	var x = key.split("b");
-	var y = "b"+String(Number(x[1])+1)
-	document.getElementById(y).style.cursor = "pointer";
-	document.getElementById(y).setAttribute( "onClick", "check('"+y+"')" );
-}
