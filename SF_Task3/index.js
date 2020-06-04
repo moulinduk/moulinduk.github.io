@@ -294,10 +294,22 @@ function choose(x) {
 }
 
 function roll() {
-	var x = Math.floor(Math.random() * 6) + 1;
-	document.getElementById("out").innerHTML = x;
-	deactivateRoller();
-	operate(x);
+	var x;
+	var res = document.getElementById("out");
+	var i = 0;
+	var anim = setInterval(frame, 50);
+	function frame() {
+		if (i == 10) {
+			deactivateRoller();
+			operate(x);
+			clearInterval(anim);
+		}
+		else {
+			i++;
+			x = Math.floor(Math.random() * 6) + 1;
+			document.getElementById("out").innerHTML = x;
+		}
+	}
 }
 
 function check(key) {
