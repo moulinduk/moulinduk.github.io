@@ -158,6 +158,7 @@ function mod(x) {
 }
 
 function move(token, x) {
+	deactivateToken(t);
 	var dest;
 	$("#b"+String(token)+" div").attr("id", "an");
 	if (x + token <= 29) {
@@ -195,7 +196,7 @@ function aftermove(token, x) {
 			if (ta1 == ta2) document.getElementById("b"+String(token)).innerHTML = "<div class='tokenA'></div>";
 			else document.getElementById("b"+String(token)).innerHTML = "";
 		}
-		deactivateToken("A");
+		//deactivateToken("A");
 		if (token + x <29) {
 			//tran.play();
 			if (token == ta1) {
@@ -270,7 +271,7 @@ function aftermove(token, x) {
 			if (tb1 == tb2) document.getElementById("b"+String(token)).innerHTML = "<div class='tokenB'></div>";
 			else document.getElementById("b"+String(token)).innerHTML = "";
 		}
-		deactivateToken("B");
+		//deactivateToken("B");
 		if (token + x > 29) {
 			err.play();
 			alert("Sorry! you cannot move.\nTry next time.");
