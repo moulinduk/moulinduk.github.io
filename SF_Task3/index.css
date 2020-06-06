@@ -77,6 +77,10 @@ td {
 	font-weight: bold;
 }
 
+#roll::before {
+	content: "ROLL!";
+}
+
 #roll:hover {
 	background-color: #00ff1e;
 	border-radius: 10px;
