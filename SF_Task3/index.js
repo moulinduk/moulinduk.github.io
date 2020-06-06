@@ -205,7 +205,7 @@ function aftermove(token, x) {
 		}
 		else if (token + x == 29) {
 			a--;
-			document.getElementById("b"+String(token)).innerHTML = "";
+			//document.getElementById("b"+String(token)).innerHTML = "";
 			/*if (tb1 == 28) {
 				tb1 = 0;
 				bloc++;
@@ -252,7 +252,7 @@ function aftermove(token, x) {
 		}
 		else if (token + x == 29) {
 			b--;
-			document.getElementById("b"+String(token)).innerHTML = "";
+			//document.getElementById("b"+String(token)).innerHTML = "";
 			/*if (token + x == 28) {
 				if (14 == ta1) {
 					ta1 = 0;
