@@ -426,13 +426,13 @@ function choose(x) {
 }
 
 function roll() {
+        deactivateRoller();
 	var x;
 	var res = document.getElementById("out");
 	var i = 0;
 	var anim = setInterval(frame, 50);
 	function frame() {
 		if (i == 10) {
-			deactivateRoller();
 			operate(x);
 			clearInterval(anim);
 		}
