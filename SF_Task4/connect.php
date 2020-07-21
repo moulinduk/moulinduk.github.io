@@ -1,8 +1,9 @@
 <?php
 
-$server = "localhost";
-$username = "root";
-$password = "";
+$server = "*******";
+$username = "*******";
+$password = "********";
+//above 3 are changed for safety purpose
 
 $database = "mydatabase";
 
