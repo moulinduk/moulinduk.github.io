@@ -1,43 +1,629 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Home Page | Moulindu Kundu</title>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<html lang="en">
 
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">Moulindu Kundu</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="./index.html">Home</a></li>
-                        <li><a href="./academics.html">Academics</a></li>
-                        <li><a href="./webdesign.html">Web Design</a></li>
-                        <li><a href="./travel.html">Travel</a></li>
-                        <li><a href="./spirituality.html">Spirituality</a></li>
+  <title>Portfolio | Moulindu</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Moulindu's Portfolio</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#academics">Academics</a></li>
+          <li><a class="nav-link scrollto " href="#spirituality">Spirituality</a></li>
+          <li><a class="nav-link scrollto " href="#web">Web</a></li>
+          <li class="dropdown"><a href="#travel"><span>Travel</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#travel">Rajasthan</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+              <li><a href="#travel">Andaman</a></li>
+              <li><a href="#travel">Kerala with Kanyakumari</a></li>
+              <li><a href="#travel">Meghalaya</a></li>
+              <li><a href="#travel">Shimla-Manali with Amritsar</a></li>
+              <li><a href="#travel">Egypt</a></li>
+              <li><a href="#travel">Canada</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="hero-title mb-4">Hi, this is Moulindu Kundu</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Theoretical Physicist, Backend Developer, Travelling Geek, Yoga practitioner"></span></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="assets/img/testimonial-2.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p> <span style="font-weight: bold; font-size: larger;">Moulindu Kundu</span></p>
+                        <p><span style="font-weight: bold;">PhD (upcoming):</span> West University of Timisoara and University of Tours</p>
+                        <p><span style="font-weight: bold;">Integrated MSc:</span> Indian Institute of Technology Kharagpur (2024)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Research Areas</p>
+                    <ul>
+                      <li>Quantum Chromodynamics</li>
+                      <li>Quantum Field Theory</li>
+                      <li>Particle Physics</li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://forms.gle/ww61VrydVXpGPigW6" target="_blank">
-                            Leave feedback
-                            <span class="glyphicon glyphicon-comment"></span>
-                        </a></li>
-                    </ul>
+                  </div>
                 </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About me
+                      </h5>
+                    </div>
+                    <p>
+                      I recently completed my Integrated Master of Science (BSc+MSc) in Physics from 
+                      IIT Kharagpur, graduating with a CGPA of 8.85. I am excited to continue my 
+                      academic journey as a PhD student specializing in theoretical high energy physics. 
+                      Throughout my studies, I have gained valuable experience through various summer 
+                      research internships, including an international internship at McMaster 
+                      University in Canada through the MITACS 2023 program.
+                    </p>
+                    <p>
+                      In addition to my academic pursuits, I have a strong passion for web design. 
+                      I served as the lead backend developer for Spring Fest 2022, the annual cultural 
+                      fest at IIT Kharagpur, where I honed my skills in creating dynamic and 
+                      user-friendly web applications.
+                    </p>
+                    <p>
+                      Beyond these, I am a dedicated practitioner of Bhakti Yoga, 
+                      an ancient meditation practice from India that I find deeply enriching.
+                    </p>
+                    <p>
+                      Traveling is another passion of mine. I love exploring new places and whenever I 
+                      travel,make it a point to visit renowned spots, especially those known for their 
+                      natural beauty.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </nav>
-    </body>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Academics Section ======= -->
+    <section id="academics" class="services-mf pt-5 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Academics
+              </h3>
+              <p class="subtitle-a">
+                
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="skill-mf">
+                    <p class="title-s">Courses</p>
+                    <ul>
+                      <li>Conformal Field Theory</li>
+                      <li>String Theory</li>
+                      <li>Particle Physics</li>
+                      <li>Quantum Field Theory</li>
+                      <li>General Theory of Relativity</li>
+                      <li>Group Theory</li>
+                    </ul>
+                  </div>                  
+                </div>
+                <div class="col-md-6">
+                  <div class="skill-mf">
+                    <p class="title-s">Research Projects</p>
+                    <ol>
+                      <li>Semidefinite Programming in Conformal Bootstrap<br/>Supervisor: <i>Jyotirmoy Bhattacharya</i>, IIT Kharagpur</li>
+                      <li>Complex Paths in Tunneling<br/>Supervisor: <i>Sergey Sibiryakov</i>, McMaster University</li>
+                      <li>Dilepton Spectra of Heavy Quarkonium System<br/>Supervisor: <i>Saumen Datta</i>, TIFR</li>
+                      <li>
+                        <a href="https://doi.org/10.1016/j.physletb.2021.136785" target="_blank">
+                          Numerical Bootstrap in Quantum Mechanics
+                        </a><br/>Supervisor: <i>Jyotirmoy Bhattacharya</i>, IIT Kharagpur
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Academics Section -->
+
+    <!-- ======= Spirituality Section ======= -->
+    <section id="spirituality" class="services-mf bg-image pt-5 route" style="background-image: url(assets/img/spirituality-bg.jpg);">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full" style="background-color: rgba(255,255,255,0.9)">
+              <div class="title-box text-center">
+                <h3 class="title-a">
+                  Spirituality
+                </h3>
+                <p class="subtitle-a">
+                  
+                </p>
+                <div class="line-mf"></div>
+              </div>
+              <i>To be updated ..</i>
+              <!-- <div class="row">
+                <div class="col-md-6">
+                  <div class="skill-mf">
+                    <p class="title-s">Courses attended</p>
+                    <ul>
+                      <li>Bhakti Shastri (ongoing)</li>
+                      <li>ISKCON Disciple Course</li>
+                      <li>Proactive Leader</li>
+                      <li>Self Manager</li>
+                      <li>Positive Thinker</li>
+                      <li>Discover Yourself</li>
+                    </ul>
+                  </div>                  
+                </div>
+                <div class="col-md-6">
+                  <div class="skill-mf">
+                    <p class="title-s">Books read</p>
+                    <ul>
+                      <li>Srimad Bhagavatam Canto 1</li>
+                      <li>Bhagavad Gita: As It Is</li>
+                      <li>Science of Self Realisation</li>
+                      <li>Nectar of Instruction</li>
+                      <li>On the Way to Krishna</li>
+                    </ul>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Spirituality Section -->
+
+    <!-- ======= Web Section ======= -->
+    <section id="web" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Web Designing
+              </h3>
+              <p class="subtitle-a">
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <i>To be updated ..</i><br/><br/>
+        <!-- <div class="row">
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-1.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Lorem impsum dolor</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Loreda Cuno Nere</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Mavrito Lana Dere</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Bindo Laro Cado</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Studio Lena Mado</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-6.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Studio Big Bang</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> -->
+      </div>
+    </section><!-- End Web Section -->
+
+    <!-- ======= Travel Section ======= -->
+    <section id="travel" class="testimonials bg-image sect-pt4" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Travel
+              </h3>
+              <p class="subtitle-a">
+                
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/travel-3.jpg" alt="" class="b-shadow-a" width="70%" height="20%">
+                      <span class="author">Niagara Falls</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/hero-bg.jpg" alt="" class="b-shadow-a" width="70%" height="20%">
+                      <span class="author">Lake Louise</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/travel-2.jpg" alt="" class="b-shadow-a" width="70%" height="20%">
+                      <span class="author">Sphinx</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Travel Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        Send Message Us
+                      </h5>
+                    </div>
+                    <div>
+                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12 text-center my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="button" class="button button-a button-big button-rouded">Send Message</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        
+                      </p>
+                      <ul class="list-ico">
+                        <li><span class="bi bi-geo-alt"></span> 80 Arya Vidyalaya Road, Kolkata - 700078, India</li>
+                        <li><span class="bi bi-phone"></span> +91 7003486209</li>
+                        <li><span class="bi bi-envelope"></span> moulindukundu@yahoo.in</li>
+                      </ul>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a target="_blank" href="https://www.facebook.com/moulindu.kundu.75/"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/moulindukundu"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                        <li><a target="_blank" href="https://www.twitter.com/MoulinduK"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/moulindu-kundu-37ba91178/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Moulindu Kundu</strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
