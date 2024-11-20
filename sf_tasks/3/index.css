@@ -1,0 +1,133 @@
+body {
+	background-image: url("back.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	cursor: default;
+}
+
+table {
+	border-collapse: collapse;
+	min-width: 800px;
+}
+
+td {
+	height: 70px;
+	width: 70px;
+	text-align: center;
+}
+
+.visible:hover {
+	background: rgb(209, 125, 255);
+}
+
+.visible {
+	/*border: 1px solid grey;*/
+	border-radius: 20px;
+	background: linear-gradient(to right, rgba(157, 3, 252, 20%), black);
+	color: white;
+	position: relative;
+}
+
+/*#b1:hover {
+	background: #ff5252;
+	opacity: 20%;
+}
+
+#b28:hover {
+	background: #ff8f8f;
+	opacity: 20%;
+}
+
+#b15:hover {
+	background: #4d61ff;
+	opacity: 20%;
+}
+
+#b14:hover {
+	background: #8a97ff;
+	opacity: 20%;
+}*/
+
+#b1 {
+	background: #ff5252;
+}
+
+#b28 {
+	background: #ff8f8f;
+}
+
+#b15 {
+	background: #4d61ff;
+}
+
+#b14 {
+	background: #8a97ff;
+}
+
+.locker {
+	border: 2px solid black;
+	width: 100px;
+	text-align: center;
+	padding: 10px 0px;
+	/* cursor: pointer; */
+}
+
+#out {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#roll::before {
+	content: "ROLL!";
+}
+
+#roll:hover {
+	background-color: #00ff1e;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px black;
+}
+
+#roll {
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 30px;
+	color: #ff4400;
+	text-shadow: 0px 0px 2px black;
+}
+
+.cheat:hover {
+	background-color: rgb(0, 200, 255);
+	border-radius: 35px;
+	box-shadow: 0px 0px 5px black;
+}
+
+.tokenA {
+	height: 20px;
+	width: 20px; 
+	border-radius: 50%; 
+	background-color: rgb(200,0,0); 
+	display: inline-grid;
+	margin: 2px;
+	position: relative;
+	z-index: 1;
+}
+
+.tokenB {
+	height: 20px;
+	width: 20px; 
+	border-radius: 50%; 
+	background-color: blue; 
+	display: inline-grid;
+	margin: 2px;
+	position: relative;
+	z-index: 1;
+}
+
+.tokenI {
+	height: 20px;
+	width: 20px; 
+	border-radius: 50%; 
+	background-color: rgba(0,0,0,0%); 
+	display: inline-grid;
+	margin: 2px;
+}

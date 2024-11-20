@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>Ludo (Simplified)</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body><center>
+	<table>
+		<tr>
+			<td><div class="locker" id="A">Locker for A <br><div class = "tokenA"></div><div class = "tokenA"></div></td>
+			<td class="visible" id="b1"></td>
+			<td class="visible" id="b2"></td>
+			<td class="visible" id="b3"></td>
+			<td class="visible" id="b4"></td>
+			<td class="visible" id="b5"></td>
+			<td class="visible" id="b6"></td>
+			<td class="visible" id="b7"></td>
+			<td class="visible" id="b8"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="visible" id="b28"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="visible" id="b9"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="visible" id="b27"></td>
+			<td></td>
+			<td></td>
+			<td colspan="2" id="turn">TURN: Player A</td>
+			<td></td>
+			<td></td>
+			<td class="visible" id="b10"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="visible" id="b26"></td>
+			<td></td>
+			<td></td>
+			<td colspan="2" id="roll" onclick="roll()"></td>
+			<td></td>
+			<td></td>
+			<td class="visible" id="b11"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="visible" id="b25"></td>
+			<td></td>
+			<td></td>
+			<td colspan="2" id="out">0</td>
+			<td></td>
+			<td></td>
+			<td class="visible" id="b12"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="visible" id="b24"></td>
+			<td style="cursor: pointer;" class="cheat" onclick="choose(1)">1</td>
+			<td style="cursor: pointer;" class="cheat" onclick="choose(2)">2</td>
+			<td style="cursor: pointer;" class="cheat" onclick="choose(3)">3</td>
+			<td style="cursor: pointer;" class="cheat" onclick="choose(4)">4</td>
+			<td style="cursor: pointer;" class="cheat" onclick="choose(5)">5</td>
+			<td style="cursor: pointer;" class="cheat" onclick="choose(6)">6</td>
+			<td class="visible" id="b13"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="visible" id="b23"></td>
+			<td></td>
+			<td colspan="2">Successful<br>Token(s):</td>
+			<td colspan="2" id="success"></td>
+			<td></td>
+			<td class="visible" id="b14"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="visible" id="b22"></td>
+			<td class="visible" id="b21"></td>
+			<td class="visible" id="b20"></td>
+			<td class="visible" id="b19"></td>
+			<td class="visible" id="b18"></td>
+			<td class="visible" id="b17"></td>
+			<td class="visible" id="b16"></td>
+			<td class="visible" id="b15"></td>
+			<td><div class="locker" id="B">Locker for B <br><div class = "tokenB"></div><div class="tokenB"></div></div></td>
+		</tr>
+	</table>
+	<script type="text/javascript" src="index.js"></script>
+</center></body>
+</html>
